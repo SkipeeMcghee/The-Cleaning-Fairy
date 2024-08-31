@@ -1,0 +1,127 @@
+/* Fonts */
+@font-face {
+    font-family: 'Lobster';
+    src: url('Fonts/Lobster-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Reset some basic elements */
+body, h1, h2, p, ul, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Lobster';
+    font-size: 48px;
+}
+
+body {
+    font-family: Arial, Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e0f7fa; /* Light cyan background for a clean look */
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+}
+
+.promotion-banner {
+    background-color: #00bcd4; /* Bright cyan for visibility */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+
+header, footer {
+    text-align: center;
+    background: #00838f; /* Dark cyan for header and footer */
+    color: #fff;
+    padding: 20px 0;
+    margin: 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-style: italic;
+}
+
+section#contact, section#testimonials, section#gallery {
+    background: #ffffff; /* White background for clean sections */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    color: #00838f; /* Dark cyan for section headings */
+}
+
+section#contact ul {
+    list-style: none;
+}
+
+section#contact ul li {
+    background: #e4f7fa; /* Light cyan for list items */
+    margin: 10px 0;
+    padding: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 40px 0;
+    padding: 20px;
+    border-left: 5px solid #e0f7fa; /* Light cyan accent for blockquotes */
+    background-color: transparent;
+    color: #555;
+}
+
+section#gallery img {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    background: #00838f;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    gap: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+      grid-template-rows: auto auto auto;
+    }
+}
+
+.grid-title {
+    text-align: center;
+    font-size: x-large;
+    color: #00838f; /* Dark cyan for grid title */
+}
